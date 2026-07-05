@@ -35,8 +35,7 @@ Type the following command:
 
 ## Local Installation
 
-Enter the `bin` directory and edit the `install.sh` script.
-Make sure that the `owner:group` is set correctly for the `chown` command.
+Enter the `bin` directory.
 
 Type the following command:
 

@@ -5,10 +5,17 @@
 
 
 # ...
+set -euo pipefail
+
+
+# ...
 INSTALL_DIR=/opt/llama.cpp
 
 # ...
 BIN_DIR=/opt/bin
+
+# ...
+SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
 
 # ...
 FILE_LIST="llama-cli llama-mtmd-cli llama-server llama-gguf-split llama-perplexity llama-bench"
@@ -17,9 +24,11 @@ FILE_LIST="llama-cli llama-mtmd-cli llama-server llama-gguf-split llama-perplexi
 # ----------------------------------------
 # Create installation directories
 # ----------------------------------------
+CURRENT_USER="$(whoami)"
+
 if [ ! -d "$INSTALL_DIR" ]; then
     sudo mkdir -p "$INSTALL_DIR"
-    sudo chown gb:gb "$INSTALL_DIR"
+    sudo chown "${CURRENT_USER}:${CURRENT_USER}" "$INSTALL_DIR"
     mkdir -p "$INSTALL_DIR/bin"
 fi
 
@@ -27,18 +36,12 @@ fi
 # ----------------------------------------
 # Copy files
 # ----------------------------------------
-cp ../github/llama.cpp/build/bin/*  "$INSTALL_DIR/bin/"
+cp ${SCRIPT_DIR}/../github/llama.cpp/build/bin/*  "$INSTALL_DIR/bin/"
 
 
 # ----------------------------------------
 # Create symbolic links
 # ----------------------------------------
 for target in $FILE_LIST; do
-    # Delete existing symbolic link.
-    if [ -L "$BIN_DIR/$target" ]; then
-        rm "$BIN_DIR/$target"
-    fi
-
-    # Create symbolic links.
-    ln -s "$INSTALL_DIR/bin/$target" "$BIN_DIR/$target"
+    ln -sf "$INSTALL_DIR/bin/$target" "$BIN_DIR/$target"
 done
