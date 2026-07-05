@@ -1,8 +1,8 @@
 
 # Build and Installation of llama.cpp
 
-This repository contains bash scripts for build and installation of the 
-[llama.cpp](https://github.com/ggml-org/llama.cpp) LLM inference engine.
+This repository contains bash scripts for the build and installation of the 
+[llama.cpp](https://github.com/ggml-org/llama.cpp) LLM inference engine on **Linux**.
 
 
 ## Overview
@@ -10,14 +10,14 @@ This repository contains bash scripts for build and installation of the
 The `bin` directory contains the following bash scripts:
 
 ```text
-bin
-├── build.sh                # Build llama.cpp LLM inference engine.
-└── install.sh              # Install llama.cpp LLM inference engine in the local file system.
+bin/
+├── build.sh        # Build llama.cpp LLM inference engine.
+└── install.sh      # Install llama.cpp LLM inference engine in the local file system.
 ```
 
-**NOTE**: The `llama.cpp` LLM inference engine requires that the **NVIDIA CUDA Toolkit** and **NVIDIA NCCL** is installed in the system.
-The installation of the **NVIDIA CUDA Toolkit** can be found here [ed_nvidia_cuda](https://github.com/embed-dsp/ed_nvidia_cuda)
-and build and installation of **NVIDIA NCCL** can be found here [ed_nvidia_nccl](https://github.com/embed-dsp/ed_nvidia_nccl)
+**NOTE**: The `llama.cpp` LLM inference engine requires that the **NVIDIA CUDA Toolkit** and **NVIDIA NCCL** are installed on the system.
+Instructions for installing the **NVIDIA CUDA Toolkit** can be found here [ed_nvidia_cuda](https://github.com/embed-dsp/ed_nvidia_cuda)
+and instructions for build and installation of **NVIDIA NCCL** can be found here [ed_nvidia_nccl](https://github.com/embed-dsp/ed_nvidia_nccl)
 
 
 ## Build
