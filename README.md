@@ -29,6 +29,7 @@ Also, make sure that the paths to NCCL are set correctly in the `cmake` configur
 Type the following command:
 
 ```sh
+# Command
 ./build.sh
 ```
 
@@ -40,6 +41,7 @@ Enter the `bin` directory.
 Type the following command:
 
 ```sh
+# Command
 ./install.sh
 ```
 
