@@ -5,7 +5,8 @@
 
 
 # Source the CUDA environment.
-source ../../../nvidia/ed_nvidia_cuda/bin/setenv_fedora_cuda_12.9.sh
+# source ../../../nvidia/ed_nvidia_cuda/bin/setenv_fedora_cuda_12.9.sh
+source ../../../nvidia/ed_nvidia_cuda/bin/setenv_fedora_cuda_13.1.sh
 
 # Clone github repo if it does not exist.
 if [ ! -d "../github/llama.cpp" ]; then
