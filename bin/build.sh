@@ -30,4 +30,4 @@ fi
 cmake -B build -DBUILD_SHARED_LIBS=OFF -DGGML_CUDA=ON -DGGML_CUDA_NCCL=ON -DNCCL_INCLUDE_DIR=/opt/nvidia/nccl/include -DNCCL_LIBRARY=/opt/nvidia/nccl/lib/libnccl.so
 
 # Build.
-cmake --build build --config Release -j 8 --clean-first --target llama-cli llama-mtmd-cli llama-server llama-gguf-split llama-perplexity llama-bench
+cmake --build build --config Release -j 8 --clean-first --target llama-cli llama-server llama-perplexity llama-bench llama-quantize

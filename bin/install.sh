@@ -18,7 +18,7 @@ BIN_DIR=/opt/bin
 SCRIPT_DIR="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
 
 # ...
-FILE_LIST="llama-cli llama-mtmd-cli llama-server llama-gguf-split llama-perplexity llama-bench"
+FILE_LIST="llama-cli llama-server llama-perplexity llama-bench llama-quantize"
 
 
 # ----------------------------------------
