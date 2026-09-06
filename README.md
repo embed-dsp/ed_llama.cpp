@@ -11,8 +11,7 @@ The `bin` directory contains the following bash scripts:
 
 ```text
 bin/
-├── build.sh        # Build llama.cpp LLM inference engine.
-└── install.sh      # Install llama.cpp LLM inference engine in the local file system.
+└── build_install.sh    # Build and install llama.cpp LLM inference engine in the local file system.
 ```
 
 **NOTE**: The `llama.cpp` LLM inference engine requires that the **NVIDIA CUDA Toolkit** and **NVIDIA NCCL** are installed on the system.
