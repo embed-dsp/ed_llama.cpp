@@ -50,11 +50,7 @@ The `llama.cpp` LLM inference engine is installed in the local file system in `/
 ```text
 /opt/llama.cpp
 └── bin
-    ├── llama-bench
     ├── llama-cli
-    ├── llama-gguf-split
-    ├── llama-mtmd-cli
-    ├── llama-perplexity
     └── llama-server
 ```
 
@@ -62,11 +58,7 @@ Symbolic links are created from `/opt/bin` to the respective executables in `/op
 
 ```text
 /opt/bin
-    llama-bench -> /opt/llama.cpp/bin/llama-bench
     llama-cli -> /opt/llama.cpp/bin/llama-cli
-    llama-gguf-split -> /opt/llama.cpp/bin/llama-gguf-split
-    llama-mtmd-cli -> /opt/llama.cpp/bin/llama-mtmd-cli
-    llama-perplexity -> /opt/llama.cpp/bin/llama-perplexity
     llama-server -> /opt/llama.cpp/bin/llama-server
 ```
 
