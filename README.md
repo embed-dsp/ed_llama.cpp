@@ -19,9 +19,9 @@ Instructions for installing the **NVIDIA CUDA Toolkit** can be found here [ed_nv
 and instructions for build and installation of **NVIDIA NCCL** can be found here [ed_nvidia_nccl](https://github.com/embed-dsp/ed_nvidia_nccl)
 
 
-## Build
+## Build and Install
 
-Enter the `bin` directory and edit the `build.sh` script.
+Enter the `bin` directory and edit the `build_install.sh` script.
 Make sure that the path to the sourcing of the CUDA environment is set correctly.
 Also, make sure that the paths to NCCL are set correctly in the `cmake` configuration.
 
@@ -29,19 +29,7 @@ Type the following command:
 
 ```sh
 # Command
-./build.sh
-```
-
-
-## Local Installation
-
-Enter the `bin` directory.
-
-Type the following command:
-
-```sh
-# Command
-./install.sh
+./build_install.sh
 ```
 
 The `llama.cpp` LLM inference engine is installed in the local file system in `/opt/llama.cpp`:
